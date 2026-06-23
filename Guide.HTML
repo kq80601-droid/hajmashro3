@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل الحاج</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background-color: #0f2a1e;
+    color: #fff;
+    direction: rtl;
+    text-align: right;
+  }
+  header {
+    background: linear-gradient(135deg, #1B4D3E 0%, #0f2a1e 100%);
+    border-bottom: 3px solid #C9A84C;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logo-text { font-size: 22px; font-weight: bold; color: #C9A84C; }
+  header a.back-btn {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid #C9A84C;
+    color: #C9A84C;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  header a.back-btn:hover { background: #C9A84C; color: #0f2a1e; }
+
+  .page-hero {
+    background: linear-gradient(180deg, #1B4D3E, #0f2a1e);
+    text-align: center;
+    padding: 40px 30px 30px;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+  .page-hero .icon { font-size: 60px; margin-bottom: 10px; }
+  .page-hero h1 { font-size: 36px; color: #C9A84C; margin-bottom: 8px; }
+  .page-hero p { color: #9dc4b6; font-size: 16px; }
+
+  .content { padding: 40px 60px 60px; max-width: 900px; margin: 0 auto; }
+
+  .section-title {
+    font-size: 20px;
+    color: #C9A84C;
+    margin: 35px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tip-card {
+    background: linear-gradient(145deg, #1e4a38, #163d2c);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    transition: border-color 0.2s;
+  }
+  .tip-card:hover { border-color: rgba(201,168,76,0.5); }
+  .tip-card .tip-icon { font-size: 30px; margin-bottom: 10px; }
+  .tip-card h4 { color: #C9A84C; font-size: 16px; margin-bottom: 8px; }
+  .tip-card p { color: #b0d4c7; font-size: 14px; line-height: 1.7; }
+
+  .checklist {
+    background: linear-gradient(145deg, #1e4a38, #163d2c);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+  }
+  .checklist h3 { color: #C9A84C; font-size: 18px; margin-bottom: 15px; }
+  .checklist ul { list-style: none; }
+  .checklist ul li {
+    color: #b0d4c7;
+    font-size: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .checklist ul li .check { color: #C9A84C; font-size: 16px; }
+
+  .warning-box {
+    background: rgba(180, 60, 60, 0.1);
+    border: 1px solid rgba(200, 80, 80, 0.4);
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 20px 0;
+  }
+  .warning-box h4 { color: #e88; font-size: 16px; margin-bottom: 10px; }
+  .warning-box ul { list-style: none; }
+  .warning-box ul li {
+    color: #d4a0a0;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .warning-box ul li::before { content: "⚠ "; color: #e88; }
+
+  footer {
+    background: #0a1e14;
+    border-top: 2px solid rgba(201,168,76,0.3);
+    text-align: center;
+    padding: 20px;
+    color: #5a8a78;
+    font-size: 13px;
+  }
+  footer a { color: #C9A84C; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-text">📖 دليل الحاج</div>
+  <a href="index.html" class="back-btn">→ العودة للرئيسية</a>
+</header>
+
+<div class="page-hero">
+  <div class="icon">📖</div>
+  <h1>دليل الحاج والمعتمر</h1>
+  <p>نصائح وإرشادات عملية قبل السفر وأثناء الرحلة</p>
+</div>
+
+<div class="content">
+
+  <!-- قبل السفر -->
+  <div class="section-title">✈️ قبل السفر</div>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">📋</div>
+      <h4>استخرج الوثائق مبكراً</h4>
+      <p>جواز سفر ساري، تصريح الحج، التطعيمات المطلوبة (المنينجايتس وغيرها). راجع متطلبات السفارة.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">📚</div>
+      <h4>تعلّم المناسك جيداً</h4>
+      <p>احضر دورات تعليمية، اقرأ كتباً موثوقة، واسأل العلماء عن أي إشكالات قبل السفر.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">💪</div>
+      <h4>تهيأ جسدياً</h4>
+      <p>الحج يحتاج مشياً طويلاً. مارس الرياضة وتمشى يومياً قبل السفر بأشهر. راجع طبيبك إن كنت مريضاً.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">💰</div>
+      <h4>وفّر ميزانية كافية</h4>
+      <p>احتسب تكاليف السفر والإقامة والغذاء والهدي والتصريح. أضف احتياطياً لطوارئ غير متوقعة.</p>
+    </div>
+  </div>
+
+  <!-- ما تحمله معك -->
+  <div class="section-title">🎒 ما تحمله معك</div>
+
+  <div class="checklist">
+    <h3>حقيبة الحاج الأساسية</h3>
+    <ul>
+      <li><span class="check">✦</span> ملابس الإحرام (إزاران ورداءان للرجل)</li>
+      <li><span class="check">✦</span> حذاء خفيف مريح للمشي الطويل (الصرامة محرّمة للرجل)</li>
+      <li><span class="check">✦</span> دواء شخصي كافٍ طيلة الرحلة + نسخة من الوصفات</li>
+      <li><span class="check">✦</span> بطاقة هوية ونسخة من الجواز في مكان آمن</li>
+      <li><span class="check">✦</span> كتيب صغير بالأدعية والمناسك</li>
+      <li><span class="check">✦</span> واقٍ للشمس، ومبخخ ماء، قبعة أو مظلة</li>
+      <li><span class="check">✦</span> شاحن جوال ومحوّل كهربائي مناسب</li>
+      <li><span class="check">✦</span> مبلغ نقدي + بطاقة بنكية للطوارئ</li>
+    </ul>
+  </div>
+
+  <!-- نصائح أثناء الأداء -->
+  <div class="section-title">🌟 نصائح أثناء أداء المناسك</div>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">💧</div>
+      <h4>اشرب الماء باستمرار</h4>
+      <p>الحرارة شديدة في مكة. اشرب ماء زمزم باستمرار ولا تنتظر حتى تشعر بالعطش.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🕐</div>
+      <h4>ادرس الأوقات المناسبة</h4>
+      <p>تجنب ساعات الذروة في الحرم. ابكر قبل الصلوات وابتعد عن التزاحم ما أمكن.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🤝</div>
+      <h4>تعاون مع رفقتك</h4>
+      <p>لا تذهب وحدك خاصة الليل. حدد نقطة تجمع مع أفراد مجموعتك في حال الانفصال.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🙏</div>
+      <h4>اصبر وتحمّل بنية صادقة</h4>
+      <p>المشقة جزء من العبادة. استحضر النية وأكثر من الذكر ولا تشغل نفسك بالشكوى.</p>
+    </div>
+  </div>
+
+  <!-- المحظورات -->
+  <div class="section-title">🚫 محظورات الإحرام</div>
+
+  <div class="warning-box">
+    <h4>يُحرم على المحرم ما يلي:</h4>
+    <ul>
+      <li>لبس المخيط للرجل (القميص والسراويل وغيرها)</li>
+      <li>تغطية الرأس للرجل (خوذة، قبعة، عمامة...)</li>
+      <li>لبس النقاب والقفازين للمرأة</li>
+      <li>قص الشعر أو الأظافر أو إزالة الشعر</li>
+      <li>استخدام الطيب بعد الإحرام</li>
+      <li>الصيد والاصطياد في الحرم</li>
+      <li>عقد النكاح أو الخطبة</li>
+      <li>الجماع ومقدماته (يُفسد الحج)</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <a href="index.html">→ العودة إلى الصفحة الرئيسية</a>
+</footer>
+
+</body>
+</html>

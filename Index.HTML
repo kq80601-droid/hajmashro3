@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحج والعمرة - الصفحة الرئيسية</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background-color: #0f2a1e;
+    color: #fff;
+    direction: rtl;
+    text-align: right;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, #1B4D3E 0%, #0f2a1e 100%);
+    border-bottom: 3px solid #C9A84C;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #C9A84C;
+    letter-spacing: 1px;
+  }
+
+  header .logo-sub {
+    font-size: 13px;
+    color: #a8c5ba;
+    margin-top: 3px;
+  }
+
+  header .kaaba-icon {
+    font-size: 50px;
+    color: #C9A84C;
+    opacity: 0.9;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    background: linear-gradient(180deg, #0f2a1e 0%, #163d2c 60%, #1B4D3E 100%);
+    text-align: center;
+    padding: 60px 40px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 250px; height: 250px;
+    background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid #C9A84C;
+    color: #C9A84C;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    color: #C9A84C;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 20px rgba(201,168,76,0.3);
+  }
+
+  .hero .ayah {
+    font-size: 20px;
+    color: #d4e8e1;
+    margin: 15px auto;
+    max-width: 700px;
+    line-height: 1.8;
+    font-style: italic;
+    border-right: 3px solid #C9A84C;
+    padding-right: 15px;
+  }
+
+  .hero .ayah-ref {
+    font-size: 13px;
+    color: #8ab5a6;
+    margin-top: 5px;
+  }
+
+  /* DIVIDER */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 60px;
+  }
+
+  .divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+  }
+
+  .divider-star {
+    color: #C9A84C;
+    font-size: 20px;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+    color: #C9A84C;
+    margin-bottom: 8px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+    color: #8ab5a6;
+  }
+
+  /* CARDS GRID */
+  .cards-section {
+    padding: 0 50px 60px;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: linear-gradient(145deg, #1e4a38 0%, #163d2c 100%);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 12px;
+    padding: 35px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 0 40px 40px 0;
+    border-color: transparent rgba(201,168,76,0.2) transparent transparent;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    border-color: #C9A84C;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 20px rgba(201,168,76,0.15);
+  }
+
+  .card:hover::before {
+    border-color: transparent rgba(201,168,76,0.5) transparent transparent;
+  }
+
+  .card-icon {
+    font-size: 52px;
+    margin-bottom: 18px;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(201,168,76,0.3));
+  }
+
+  .card-title {
+    font-size: 22px;
+    color: #C9A84C;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-desc {
+    font-size: 14px;
+    color: #9dc4b6;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .card-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #C9A84C, #e8c96d);
+    color: #0f2a1e;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+
+  .card:hover .card-btn {
+    background: linear-gradient(135deg, #e8c96d, #C9A84C);
+    box-shadow: 0 4px 15px rgba(201,168,76,0.4);
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0a1e14;
+    border-top: 2px solid rgba(201,168,76,0.3);
+    text-align: center;
+    padding: 20px;
+    color: #5a8a78;
+    font-size: 13px;
+  }
+
+  footer span {
+    color: #C9A84C;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="logo-text">✦ دليل الحج والعمرة</div>
+    <div class="logo-sub">موقعك الشامل لكل ما يخص الحج والعمرة</div>
+  </div>
+  <div class="kaaba-icon">🕋</div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">بسم الله الرحمن الرحيم</div>
+  <h1>🌙 الحج والعمرة</h1>
+  <div class="ayah">
+    وَأَذِّن فِي النَّاسِ بِالْحَجِّ يَأْتُوكَ رِجَالًا وَعَلَىٰ كُلِّ ضَامِرٍ يَأْتِينَ مِن كُلِّ فَجٍّ عَمِيقٍ
+  </div>
+  <div class="ayah-ref">— سورة الحج: الآية 27 —</div>
+</div>
+
+<!-- DIVIDER -->
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-star">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- CARDS -->
+<div class="cards-section">
+  <div class="section-title">
+    <h2>اختر ما تريد معرفته</h2>
+    <p>انقر على أي قسم للانتقال إليه</p>
+  </div>
+
+  <div class="cards-grid">
+
+    <!-- بطاقة 1 -->
+    <a href="hajj.html" class="card">
+      <span class="card-icon">🕋</span>
+      <div class="card-title">مناسك الحج</div>
+      <div class="card-desc">تعرّف على أركان وواجبات الحج خطوة بخطوة، من الإحرام إلى طواف الوداع</div>
+      <div class="card-btn">اذهب إلى الصفحة ←</div>
+    </a>
+
+    <!-- بطاقة 2 -->
+    <a href="umrah.html" class="card">
+      <span class="card-icon">🌿</span>
+      <div class="card-title">مناسك العمرة</div>
+      <div class="card-desc">دليلك الكامل لأداء العمرة من الإحرام والطواف والسعي والتقصير</div>
+      <div class="card-btn">اذهب إلى الصفحة ←</div>
+    </a>
+
+    <!-- بطاقة 3 -->
+    <a href="duaa.html" class="card">
+      <span class="card-icon">🤲</span>
+      <div class="card-title">الأدعية والأذكار</div>
+      <div class="card-desc">أدعية الطواف والسعي ويوم عرفة وسائر المناسك والأماكن المقدسة</div>
+      <div class="card-btn">اذهب إلى الصفحة ←</div>
+    </a>
+
+    <!-- بطاقة 4 -->
+    <a href="guide.html" class="card">
+      <span class="card-icon">📖</span>
+      <div class="card-title">دليل الحاج</div>
+      <div class="card-desc">نصائح عملية وإرشادات مهمة للحاج والمعتمر قبل السفر وأثناء الرحلة</div>
+      <div class="card-btn">اذهب إلى الصفحة ←</div>
+    </a>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>جميع المعلومات مستقاة من المصادر الشرعية المعتمدة &nbsp;|&nbsp; <span>دليل الحج والعمرة</span></p>
+</footer>
+
+</body>
+</html>

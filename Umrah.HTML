@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مناسك العمرة</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background-color: #0f2a1e;
+    color: #fff;
+    direction: rtl;
+    text-align: right;
+  }
+  header {
+    background: linear-gradient(135deg, #1B4D3E 0%, #0f2a1e 100%);
+    border-bottom: 3px solid #C9A84C;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logo-text { font-size: 22px; font-weight: bold; color: #C9A84C; }
+  header a.back-btn {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid #C9A84C;
+    color: #C9A84C;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  header a.back-btn:hover { background: #C9A84C; color: #0f2a1e; }
+
+  .page-hero {
+    background: linear-gradient(180deg, #1B4D3E, #0f2a1e);
+    text-align: center;
+    padding: 40px 30px 30px;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+  .page-hero .icon { font-size: 60px; margin-bottom: 10px; }
+  .page-hero h1 { font-size: 36px; color: #C9A84C; margin-bottom: 8px; }
+  .page-hero p { color: #9dc4b6; font-size: 16px; }
+
+  .content { padding: 40px 60px 60px; max-width: 900px; margin: 0 auto; }
+
+  .umrah-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+
+  .umrah-flow::before {
+    content: '';
+    position: absolute;
+    right: 23px;
+    top: 48px;
+    bottom: 48px;
+    width: 2px;
+    background: linear-gradient(180deg, #C9A84C, rgba(201,168,76,0.1));
+    z-index: 0;
+  }
+
+  .u-step {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    background: linear-gradient(145deg, #1e4a38, #163d2c);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 12px;
+    padding: 25px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.2s;
+  }
+  .u-step:hover { border-color: rgba(201,168,76,0.6); }
+
+  .u-num {
+    background: linear-gradient(135deg, #C9A84C, #e8c96d);
+    color: #0f2a1e;
+    font-size: 20px;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .u-body h3 { color: #C9A84C; font-size: 20px; margin-bottom: 8px; }
+  .u-body p { color: #b0d4c7; font-size: 15px; line-height: 1.8; }
+  .u-body .hadith {
+    margin-top: 12px;
+    background: rgba(201,168,76,0.08);
+    border-right: 3px solid #C9A84C;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    color: #d4c090;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .info-box {
+    background: linear-gradient(145deg, #1e4a38, #163d2c);
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin: 35px 0;
+  }
+  .info-box h3 { color: #C9A84C; font-size: 18px; margin-bottom: 15px; }
+  .info-box ul { list-style: none; }
+  .info-box ul li {
+    color: #b0d4c7;
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .info-box ul li::before { content: "✦ "; color: #C9A84C; }
+
+  footer {
+    background: #0a1e14;
+    border-top: 2px solid rgba(201,168,76,0.3);
+    text-align: center;
+    padding: 20px;
+    color: #5a8a78;
+    font-size: 13px;
+  }
+  footer a { color: #C9A84C; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-text">🌿 مناسك العمرة</div>
+  <a href="index.html" class="back-btn">→ العودة للرئيسية</a>
+</header>
+
+<div class="page-hero">
+  <div class="icon">🌿</div>
+  <h1>مناسك العمرة</h1>
+  <p>دليلك الكامل لأداء العمرة بصورة صحيحة</p>
+</div>
+
+<div class="content">
+
+  <div class="info-box">
+    <h3>🌟 فضل العمرة</h3>
+    <ul>
+      <li>العمرة إلى العمرة كفارة لما بينهما من الذنوب</li>
+      <li>العمرة في رمضان تعدل حجة مع النبي ﷺ</li>
+      <li>من أحرم بعمرة ثم مات غُفر له</li>
+    </ul>
+  </div>
+
+  <div class="umrah-flow">
+
+    <div class="u-step">
+      <div class="u-num">١</div>
+      <div class="u-body">
+        <h3>الإحرام من الميقات</h3>
+        <p>يغتسل المعتمر ويتطيب قبل الإحرام ويلبس ملابس الإحرام، ثم ينوي قائلاً: "لبيك اللهم عمرة"، ويرفع صوته بالتلبية: "لبيك اللهم لبيك، لبيك لا شريك لك لبيك، إن الحمد والنعمة لك والملك، لا شريك لك".</p>
+        <div class="hadith">📌 يستمر في التلبية حتى يرى البيت الحرام</div>
+      </div>
+    </div>
+
+    <div class="u-step">
+      <div class="u-num">٢</div>
+      <div class="u-body">
+        <h3>دخول المسجد الحرام</h3>
+        <p>يدخل المعتمر المسجد الحرام بالرِّجل اليمنى قائلاً: "بسم الله والصلاة والسلام على رسول الله، اللهم اغفر لي ذنوبي وافتح لي أبواب رحمتك". وعند رؤية الكعبة يدعو بما شاء.</p>
+      </div>
+    </div>
+
+    <div class="u-step">
+      <div class="u-num">٣</div>
+      <div class="u-body">
+        <h3>الطواف حول الكعبة</h3>
+        <p>يطوف المعتمر سبعة أشواط حول الكعبة بدءاً من الحجر الأسود في الركن اليماني الشرقي. يجعل الكعبة عن يساره. يُستحب الاضطباع للرجل (إخراج الكتف الأيمن) في هذا الطواف، والرمل في الأشواط الثلاثة الأولى.</p>
+        <div class="hadith">📌 يختم كل شوط بـ: "ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار"</div>
+      </div>
+    </div>
+
+    <div class="u-step">
+      <div class="u-num">٤</div>
+      <div class="u-body">
+        <h3>صلاة ركعتين خلف المقام</h3>
+        <p>بعد إتمام الطواف يصلي المعتمر ركعتين خلف مقام إبراهيم إن أمكن، يقرأ في الأولى سورة الكافرون وفي الثانية سورة الإخلاص، ثم يشرب من ماء زمزم.</p>
+      </div>
+    </div>
+
+    <div class="u-step">
+      <div class="u-num">٥</div>
+      <div class="u-body">
+        <h3>السعي بين الصفا والمروة</h3>
+        <p>يتوجه إلى جبل الصفا ويرقى عليه حتى يرى الكعبة ويكبّر ويدعو، ثم يمشي إلى المروة وهكذا سبعة أشواط (الصفا إلى المروة شوط، والمروة إلى الصفا شوط آخر). يُسرع في الوادي بين العلمين الأخضرين.</p>
+        <div class="hadith">📌 يبدأ من الصفا وينتهي بالمروة</div>
+      </div>
+    </div>
+
+    <div class="u-step">
+      <div class="u-num">٦</div>
+      <div class="u-body">
+        <h3>الحلق أو التقصير (التحلل)</h3>
+        <p>يختتم المعتمر عمرته بحلق شعر الرأس كله أو تقصيره، والحلق أفضل. أما المرأة فتقصّر من شعرها قدر أنملة (طرف الإصبع). بعد ذلك يتحلل من الإحرام وتحل له جميع محظوراته.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <a href="index.html">→ العودة إلى الصفحة الرئيسية</a>
+</footer>
+
+</body>
+</html>
